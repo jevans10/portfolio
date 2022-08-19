@@ -2,24 +2,25 @@
 <html>
     <head>
         <link rel="stylesheet" href="menu.css" type="text/css">
+        <link rel="stylesheet" href="portfolio.css" type="text/css">
     </head>
-    
-    <nav>
+
+<body>
+    <nav style="display: flex;" id="nav">
         <ul class="menu">
-            <li><a href="#">
+            <li><a href="home.html">
                 <img style="vertical-align:text-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACrElEQVRoge2Yv2sUQRTH3yUhkRgCEgURDUgKSxF/BEFEbRTsbFLYScifYIqUafIvpLARQRut0kSMIBGVFHKNlSAq4i9E9HLz3r43R74WN0nWu1zucu5ml7gf2GZ35jvf787Ou5kjKmiPiIya8VMzfiIio1n76QovcsmMv5oywvXDR9WrWfvqGAAlrzJjyjVThqosqMpCCFPzKjMASln73BYAw175YTC9pspzAHrq4Xg6Hg74dSBrv1tiVj1pym9jn9G1xjZe5LIZfwttPpi5M1l4bYmq3DTlajD4WkSOt2rLzMdM+VVoK2Zya/1ZbD39daUeAECfKs/FBr0LYLCDfgMWyfxGv0jmAfRnEoSZj5ryi8036yZ3qmHmJk1ZgsbLRuOpB/FeLqrylzDQRzMe71bLzJ0y5XdbzUBqQUL1uW3Kvl593CJQGfl33cqIqltcN+6VpwGUUgnSXFrdLIDeBPV7Vd2sKa+FMI8SDxJF0QlT96Yu7H6r8o3ExBuoRe66Kf9MfLGr8oQprwbRchRFY4kIb0MURWOmXF4PosoTXYttUVrvAdifoN924+8zdXcaS/QORVYPmfFSEPFeeTolv20xc1OmrPUwvOycO9JRR+/lgip/Dgvuk/d8PmWvbTFzp035fQjz3YtcaddhypQtdHiGavXwLnltC1A5aOYex7+Spl00gCFTfhCvFAD6MvLcEgB9DduX+wCGiIhKRESmvEJEZ4lQISoNExH1Dwzm8sywWY43vK70DwyO99TvkRFReQ295zJzuEOC13Lw3syubZ27pJW/nizMpEERJG/smSCJ/VZ0WyCSKvPFjLSi0zecdInfMzNSBMkbRZC8UQTJG0WQvFEEyRtFkLxRBMkbeyZI0yEoz/9pxWk8wDXPCOj5rrnpFtBy1hYK/hv+AA7GDSloN8R7AAAAAElFTkSuQmCC">
                 home</a></li>
-            <li><a href="#">
+            <li><a href="resume.html">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABtElEQVRoge2aPU7DQBCF35jIMVZKCjp+CkSRA9DQcQA6jkBLQcEdOAkSJSVQIThAUiCBuAMBrbNjwdBEIoHYWe86ZrH26+ysxu/Z81cECPgFlf3IWklTQkyIu2mh3qhJIcukY3Ko7E00gUlmtOaLBCO+4WRE67c+62zAWo20Vucio7W6hFXFqNiLIIlOQNIHAAJOmTsfAM5qUVYRJyMg6s1eYrXoqIj0cs6GADZKYwru4iTdryrFtUZ4RoPIq2M8ALAawm6pBXqUqecSRU+FZ4neAWy6PM8a1krKhpGIpKzV8+Tcg4gspQsu0gE4phYRKRCuAACCCyL6dInngnVqicgKc3YogiMCAMJxnmWDTpLcEtGvt+dlsTOrvZyzIQGXBKxPbu9KJNc5Z/fj8XjHJu4Eq2I3WuN/Lo2s1QuArZKoN3GcHtgIqqJjGqvUirvptq2oZRF2Ld8IRnwjGPGNyu3XeEIXBvie3HNj/dEab8Oiyd3MGl/nOl5nrNbUSDDiG810rYJO9B+7VpVOFLpWKwhGfCPsWg6EXauM1tRIMOIbwYhvtMaIUfv17T8p82jNFwn4xhfBmda0YbxRYgAAAABJRU5ErkJggg==">
                 resume</a></li>
-            <li><a href="#">
+            <li><a href="portfolio.html">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEDklEQVRoge1ZTYgcRRh938zszDi7G0GSGJKIKHgR8SDoQZGNXrKCHpQcdUOMnkRvwQ3iwZ+7BxXxEG9iZIkRk9vqISiCAcWAp8QcFIyKImZn+qv+qrLzPEzPMLuz6/x0TWZZ9sEwTfVX9d7r6v6+qm5gB1sLEmMQVT04VcQ7BA4DmB2wW12A5VUWFqvV6pW8GnIbUdWDpSIuAbhtxCH+ubGK+2u12m95teRCMF3ypjTTc6p6YNB+qnrAzJ33pvSmn45T40DwpivelMOYaENV72gZcf+OQ9tQyK4oJ9W/jULeAbYKto2RnqzFen2vLxdeFsiTAO4BMH3zZW2IBMBlgufL5ea7IrN/dZ9cY8RMjwjwEQavBRMCVwg5VqnUPus5ZaZHvGnTmzKYng3BzZHcKrMBktPBuUPB9PMsQaya6dNrg+r1ve00GlI9MSGtAyOYvtpO2+TK7s4Js+St9kxMUN9QCKZftApx8kan0Zv+6E0ZgpuboLahEJx7LLvFfug0etO6NyXJmQlqGwokZzMjKwBQytpnAEBEGjFI0jS9W2T1qFDmANwLwa0QXpiaqs2LSDMGh4jUvSnQnWFjLRNIFsySt72pb4+59pdcD6ZnzOr35eVarztqZQ+Wvi+Q17JxPyHkOQgfJORZAA6QXQSeERQvpmnyVExuAHFmpOvhq2+WNJxzd3nTj7O4hnPuzjycPbpjGPGmpwetQ52i5vW9nJzxby0BHgGAG5SlfrFNNF8HABBPxOKPZoTAHgCoVqvX+sWWy9OXs8P9sfhjPuzXACBN077inHN7ssPfY5FHNMILAFAsNg/3iyyV5PHs8NtY7BGNyAMAQOKPvpFNac/EQ7HYY95a2eqAv/QLXAV+BQBmfWIgnhHKV63/wlmSlU3DyFJBmucAQIAvo/EDceoIubLbm/up3yo6BH0447vERuP2PJzjqSOy62+ieQYA0ORLm8WxiVcAQCCnZWbmz1j8AOItGpMk2e9Nk1bVdsd7eLw7nnEpG419efnGskTpjOXdsbbYDYg1M/l8FK5xGvm/8cbJE/0FXXDuUHZoG5y2dTHREMUIyUJIG/PBdIkFLgMABB/0BAo+BAAWuBxMl0LamCcZ72LmmXLv3VFv+nPXTtCbJW+SLK2PJTmVvbHp3kFe8d4tRNE9ihGS4i051SXoajC3OEg2YqOxL5hb9KZXu7bBp0gO9eEpihHvkxfb+3Dv3cIotwjJovduwVtyvZXNkheG0hDFiOnF1ks9d3KYfhshmDuZafhuSA0d3dJuAIBypTbw1GZ14pZhiAeAliu1gd83d+sePWMQ34/cdwxj9mSWQVGu1h4dte84sG2+WO0Y2WrYNkbWPOwxV6Y3G60ZIb6ZsI7RQXw9aQk72Aj/AQImfwd0z64dAAAAAElFTkSuQmCC">
                 portfolio</a></li>
         </ul>
     </nav>
+    <div>
 
-<body>
-
-
+    </div>
 </body>
 </html
