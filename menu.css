@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+nav {
+	background: black;
+	font-family: Lato;
+	color: #FAF9F6 /* off white */;
+	position: fixed;
+	
+	/* makes the menu bar sticky to position
+	position: -webkit-sticky;
+  	position: sticky;
+	top: 0;
+	*/
+}
+.menu {
+	list-style-type: none; /* Remove bullets */
+	margin: 20px;
+	padding: 0px;
+}
+.menu a /* color and style of menu links*/{
+	text-decoration: none;
+	color: inherit;
+}
+.menu a:hover{
+	text-decoration: underline;
+}
+.menu img{
+	height: 1em;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+body {
+	display: flex;
+	background:  #FAF9F6 /* off white */;
+}
