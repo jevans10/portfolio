@@ -1,17 +1,17 @@
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
+/* Webkit printing magic: print all background colors */
 html {
     -webkit-print-color-adjust: exact;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    white-space: pre-wrap;
 }
 
 @media only screen {
@@ -22,25 +22,12 @@ body {
     }
 }
 
-body {
-    line-height: 1.5;
-    white-space: pre-wrap;
-}
-
-a,
-a.visited {
+a, a:visited {
     color: inherit;
     text-decoration: underline;
 }
 
-.pdf-relative-link-path {
-    font-size: 80%;
-    color: #444;
-}
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     letter-spacing: -0.01em;
     line-height: 1.2;
     font-weight: 600;
@@ -76,11 +63,6 @@ h3 {
     word-break: break-all;
 }
 
-.callout {
-    border-radius: 3px;
-    padding: 1rem;
-}
-
 figure {
     margin: 1.25em 0;
     page-break-inside: avoid;
@@ -105,7 +87,6 @@ hr {
     display: block;
     width: 100%;
     height: 1px;
-    visibility: visible;
     border: none;
     border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
@@ -171,20 +152,12 @@ img {
     border-bottom: 1px solid rgba(55, 53, 47, 0.18);
 }
 
-table,
-th,
-td {
+table, th, td {
     border: 1px solid rgba(55, 53, 47, 0.09);
     border-collapse: collapse;
 }
 
-table {
-    border-left: none;
-    border-right: none;
-}
-
-th,
-td {
+th, td {
     font-weight: normal;
     padding: 0.25em 0.5em;
     line-height: 1.5;
@@ -196,37 +169,10 @@ th {
     color: rgba(55, 53, 47, 0.6);
 }
 
-ol,
-ul {
+ol, ul {
     margin: 0;
     margin-block-start: 0.6em;
     margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-    margin-block-start: 0.6em;
-}
-
-ul > li {
-    list-style: disc;
-}
-
-ul.to-do-list {
-    padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-    list-style: none;
-}
-
-.to-do-children-checked {
-    text-decoration: line-through;
-    opacity: 0.375;
-}
-
-ul.toggle > li {
-    list-style: none;
 }
 
 ul {
@@ -245,74 +191,12 @@ ol > li {
     padding-left: 0.2em;
 }
 
-.mono ol {
-    padding-inline-start: 2em;
+.text-icon {
+    border: 1px solid #000;
+    text-align: center;
 }
 
-.mono ol > li {
-    text-indent: -0.4em;
-}
-
-.toggle {
-    padding-inline-start: 0em;
-    list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-    padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-    margin-left: -1.1em;
-}
-
-.selected-value {
-    display: inline-block;
-    padding: 0 0.5em;
-    background: rgba(206, 205, 202, 0.5);
-    border-radius: 3px;
-    margin-right: 0.5em;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    white-space: nowrap;
-}
-
-.collection-title {
-    display: inline-block;
-    margin-right: 1em;
-}
-
-.page-description {
-    margin-bottom: 2em;
-}
-
-.simple-table {
-    margin-top: 1em;
-    font-size: 0.875rem;
-    empty-cells: show;
-}
-
-.simple-table td {
-    height: 29px;
-    min-width: 120px;
-}
-
-.simple-table th {
-    height: 29px;
-    min-width: 120px;
-}
-
-.simple-table-header-color {
-    background: rgb(247, 246, 243);
-    color: black;
-}
-
-.simple-table-header {
-    font-weight: 500;
-}
-
-time {
+.time {
     opacity: 0.5;
 }
 
@@ -325,7 +209,7 @@ time {
     margin-right: 0.5em;
 }
 
-img.icon {
+.img.icon {
     border-radius: 3px;
 }
 
@@ -340,18 +224,6 @@ img.icon {
     font-size: 0.8em;
 }
 
-.text-icon {
-    border: 1px solid #000;
-    text-align: center;
-}
-
-.page-cover-image {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    max-height: 30vh;
-}
-
 .page-header-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -364,13 +236,6 @@ img.icon {
 
 .page-header-icon img {
     border-radius: 3px;
-}
-
-.link-to-page {
-    margin: 1em 0;
-    padding: 0;
-    border: none;
-    font-weight: 500;
 }
 
 p > .user {
@@ -393,16 +258,7 @@ p {
     margin-bottom: 0.5em;
 }
 
-.image {
-    border: none;
-    margin: 1.5em 0;
-    padding: 0;
-    border-radius: 0;
-    text-align: center;
-}
-
-.code,
-code {
+.code, code {
     background: rgba(135, 131, 120, 0.15);
     border-radius: 3px;
     padding: 0.2em 0.4em;
@@ -435,10 +291,4 @@ blockquote {
     margin: 1em 0;
     padding-left: 1em;
     border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-    text-decoration: none;
-    max-height: 8em;
-    padding: 0;
 }
