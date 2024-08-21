@@ -24,18 +24,37 @@
             ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch");
         }(window, document);
     </script>
-    <div id="navbar-placeholder"></div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-placeholder').innerHTML = data;
-                });
-        });
-    </script>
+    <link href="images/favicon.png" rel="shortcut icon"/>
 </head>
 <body>
+    <div class="navbar-logo-left">
+        <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container shadow-three w-nav">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <a href="#" class="navbar-brand w-nav-brand">
+                        <img loading="lazy" height="50" alt="" src="images/black-favicon.svg" class="image"/>
+                    </a>
+                    <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+                        <ul role="list" class="nav-menu-two w-list-unstyled">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <a href="https://josephineevans.org/JOSEPHINE_EVANS'_RESUME.pdf" class="nav-link">Download my resume</a>
+                            </li>
+                            <li class="mobile-margin-top-10">
+                                <a href="https://josephineevans.org/Portfolio.pdf" class="nav-link">View my portfolio</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu-button w-nav-button">
+                        <div class="w-icon-nav-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="hero-heading-center">
         <div class="container">
             <div class="hero-wrapper">
