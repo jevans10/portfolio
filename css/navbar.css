@@ -20,6 +20,15 @@ ul {
     display: flex;
 }
 
+.navbar-logo-left-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px;
+
+}
+
+
 /* Navbar links */
 .nav-link {
     color: #1a1b1f;
@@ -84,6 +93,15 @@ ul {
     .navbar-logo-left-container {
         padding-left: 10px;
     }
+}
+
+.navbar-logo-left-container.shadow-three {
+    /* width: 100%; */
+    /* max-width: 1140px; */
+    /* margin-bottom: 0; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 @media screen and (max-width: 479px) {
