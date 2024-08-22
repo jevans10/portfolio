@@ -30,24 +30,32 @@
     <link href="images/app-icon.png" rel="apple-touch-icon" />
 </head>
 <body>
-    <div class="navbar-logo-left-container shadow-three w-nav">
+    <div id="navbar-container"></div> <!-- Placeholder for navbar -->
+    
+    <section class="hero-heading-center">
         <div class="container">
-            <div class="navbar-wrapper">
-                <a href="#" class="navbar-brand w-nav-brand">
-                    <img loading="lazy" height="50" alt src="images/black-favicon.svg" class="image" />
-                </a>
-                <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
-                    <ul role="list" class="nav-menu-two w-list-unstyled">
-                        <li><a href="https://josephineevans.org/JOSEPHINE_EVANS'_RESUME.pdf" class="nav-link">Download my resume</a></li>
-                        <li class="mobile-margin-top-10"><a href="https://jevans10.github.io/portfolio/all-projects.html" class="nav-link">View my portfolio</a></li>
-                    </ul>
-                </nav>
-                <div class="menu-button w-nav-button">
-                    <div class="w-icon-nav-menu"></div>
+            <div class="hero-wrapper">
+                <div class="hero-split">
+                    <p class="margin-bottom-24px">Hello! I’m Josephine. I’m a driven individual interested in product design and quality engineering. With a love for creating and maintaining <em>user-centered designs</em> that are visually appealing, intuitive, and <em>functional</em>, I aim to drive continuous improvement in product <em>quality and reliability</em>.</p>
                 </div>
+                <img src="images/c3a20df3-c6f2-4457-bbdb-4c53a9ec0810_1_105_c.jpeg" loading="lazy" width="Auto" sizes="64px" alt srcset="images/hero-picture" class="shadow-two" />
             </div>
         </div>
-    </div>
+    </section>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/webflow-script.js" type="text/javascript"></script>
+    <script>
+        // JavaScript to load navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/app-icon.png" rel="apple-touch-icon" />
+</head>
+<body>
     <section class="hero-heading-center">
         <div class="container">
             <div class="hero-wrapper">
