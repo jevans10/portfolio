@@ -1,5 +1,9 @@
 /* navbar.css */
 
+ul {
+    list-style: none;
+}
+
 /* Container for the navbar and logo */
 .navbar-logo-left-container {
     z-index: 5;
