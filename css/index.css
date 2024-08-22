@@ -324,24 +324,6 @@ button {
     }
 }
 
-.navbar-logo-left-container {
-    z-index: 5;
-    background-color: #0000;
-    width: 1030px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 20px
-}
-
-.navbar-logo-left-container.shadow-three {
-    width: 100%;
-    max-width: 1140px;
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 20px
-}
-
 .container {
     width: 100%;
     max-width: 940px;
