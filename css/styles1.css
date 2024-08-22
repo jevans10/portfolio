@@ -100,7 +100,7 @@ th {
     min-height: 1.5em;
     text-align: left;
     border: 1px solid #000;
-    border-bottom: 1px solid rgba(55, 53, 47, .09); /* Border for rows */
+    border-bottom: 1px solid rgba(255, 255, 255, .09); /* Border for rows */
 }
 
 th {
