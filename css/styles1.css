@@ -99,7 +99,7 @@ th {
     line-height: 1.5;
     min-height: 1.5em;
     text-align: left;
-    border: 1px solid #000
+    /* border: 1px solid #000 */
 }
 
 th {
