@@ -1,42 +1,42 @@
-/* navbar.css */
-
+/* Reset list styling for navbar */
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Container for the navbar and logo */
 .navbar-logo-left-container {
     z-index: 5;
-    background-color: #fff; /* Ensuring navbar has a white background */
-    width: 100%; /* Make sure it spans the full width */
-    max-width: 1140px; /* Adjust max-width as needed */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 20px;
+    background-color: #fff; /* White background for the navbar */
+    width: 100%; /* Full width of the viewport */
+    padding: 15px 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Includes padding and border in width */
+    margin: 0; /* Remove margin to avoid centering */
 }
 
 /* Navbar wrapper */
 .navbar-wrapper {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 10px;
-    display: flex;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding/border in width */
 }
 
 /* Navbar menu styles */
 .nav-menu-two {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
-    display: flex;
+    margin: 0; /* Remove default margin */
 }
 
 /* Navbar links */
 .nav-link {
     color: #1a1b1f;
-    letter-spacing: .25px;
-    margin-left: 5px;
-    margin-right: 5px;
+    letter-spacing: 0.25px;
+    margin: 0 5px; /* Horizontal margin */
     padding: 5px 10px;
     font-family: Bitter, serif;
     font-size: 14px;
@@ -47,14 +47,14 @@ ul {
 }
 
 .nav-link:hover {
-    color: #1a1b1fbf;
+    color: #1a1b1fbf; /* Darker color on hover */
 }
 
 .nav-link:focus-visible {
     outline-offset: 0;
-    color: #0050bd;
+    color: #0050bd; /* Focus color */
     border-radius: 4px;
-    outline: 2px solid #0050bd;
+    outline: 2px solid #0050bd; /* Focus outline */
 }
 
 /* Mobile menu button */
@@ -66,157 +66,52 @@ ul {
 
 /* Navbar collapse behavior */
 .w-nav[data-collapse=all] .w-nav-menu {
-    display: none;
+    display: none; /* Hide menu when collapsed */
 }
 
 .w-nav[data-collapse=all] .w-nav-button {
-    display: block;
+    display: block; /* Show button when collapsed */
 }
 
+/* Medium breakpoint (tablet) */
 @media screen and (max-width: 991px) {
     .w-nav[data-collapse=medium] .w-nav-menu {
-        display: none;
+        display: none; /* Hide menu */
     }
 
     .w-nav[data-collapse=medium] .w-nav-button {
-        display: block;
+        display: block; /* Show button */
     }
 }
 
+/* Small breakpoint (mobile landscape) */
 @media screen and (max-width: 767px) {
     .w-nav[data-collapse=small] .w-nav-menu {
-        display: none;
+        display: none; /* Hide menu */
     }
 
     .w-nav[data-collapse=small] .w-nav-button {
-        display: block;
+        display: block; /* Show button */
     }
 
     .navbar-logo-left-container {
-        padding-left: 10px;
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        padding-right: 10px; /* Ensure padding on both sides */
     }
 }
 
+/* Tiny breakpoint (mobile portrait) */
 @media screen and (max-width: 479px) {
     .w-nav[data-collapse=tiny] .w-nav-menu {
-        display: none;
+        display: none; /* Hide menu */
     }
 
     .w-nav[data-collapse=tiny] .w-nav-button {
-        display: block;
+        display: block; /* Show button */
     }
 }
 
-.w-icon-nav-menu:before {
-    content: ""; /* Adjust if you have different icons */
-}
-
-
-/* navbar.css */
-
-/* Container for the navbar and logo */
-.navbar-logo-left-container {
-    z-index: 5;
-    background-color: #fff; /* Ensuring navbar has a white background */
-    width: 100%; /* Make sure it spans the full width */
-    max-width: 1140px; /* Adjust max-width as needed */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 20px;
-}
-
-/* Navbar wrapper */
-.navbar-wrapper {
-    justify-content: space-between;
-    align-items: center;
-    line-height: 10px;
-    display: flex;
-}
-
-/* Navbar menu styles */
-.nav-menu-two {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    display: flex;
-}
-
-/* Navbar links */
-.nav-link {
-    color: #1a1b1f;
-    letter-spacing: .25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    font-family: Bitter, serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: #1a1b1fbf;
-}
-
-.nav-link:focus-visible {
-    outline-offset: 0;
-    color: #0050bd;
-    border-radius: 4px;
-    outline: 2px solid #0050bd;
-}
-
-/* Mobile menu button */
-.menu-button {
-    padding: 18px;
-    font-size: 24px;
-    display: none; /* Hidden by default */
-}
-
-/* Navbar collapse behavior */
-.w-nav[data-collapse=all] .w-nav-menu {
-    display: none;
-}
-
-.w-nav[data-collapse=all] .w-nav-button {
-    display: block;
-}
-
-@media screen and (max-width: 991px) {
-    .w-nav[data-collapse=medium] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=medium] .w-nav-button {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .w-nav[data-collapse=small] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=small] .w-nav-button {
-        display: block;
-    }
-
-    .navbar-logo-left-container {
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .w-nav[data-collapse=tiny] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=tiny] .w-nav-button {
-        display: block;
-    }
-}
-
+/* Icon for menu button */
 .w-icon-nav-menu:before {
     content: ""; /* Adjust if you have different icons */
 }
