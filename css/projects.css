@@ -98,12 +98,12 @@ th {
     padding: .25em .5em;
     line-height: 1.5;
     min-height: 1.5em;
-    text-align: left
+    text-align: left;
     border-bottom: 1px solid rgba(55, 53, 47, .09); /* Border for rows */
 }
 
 th {
-    color: rgba(55, 53, 47, .6)
+    color: rgba(55, 53, 47, .6)'
 }
 
 .selected-value {
