@@ -7,16 +7,20 @@ html {
 
 }
 
+
 html,
 body {
 	margin: 0;
 	padding: 0;
     line-height: 1.5;
 }
+body{
+    background-color: #faf5f9;
+    
+}
+
 @media only screen {
 	body {
-		margin-left: 20em;
-		margin-top: 0;
 		max-width: 900px;
 		color: rgb(55, 53, 47);
 	}
@@ -31,6 +35,9 @@ a.visited {
 .pdf-relative-link-path {
 	font-size: 80%;
 	color: #444;
+}
+.page-title{
+    margin-left: 20em;
 }
 
 h1,
@@ -73,6 +80,11 @@ h3 {
 	border-radius: 3px;
 	padding: 1.5em;
 	word-break: break-all;
+}
+
+#navbar-container{
+    margin-left: 20em;
+    width: 100%
 }
 
 .callout {
@@ -180,6 +192,7 @@ td {
 table {
 	border-left: none;
 	border-right: none;
+	margin-top: 0;
 }
 
 th,
@@ -224,7 +237,7 @@ ul.to-do-list > li {
 	opacity: 0.375;
 }
 
-ul.toggle > li {
+ul.toggle > li b
 	list-style: none;
 }
 
