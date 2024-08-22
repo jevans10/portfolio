@@ -48,23 +48,19 @@ color: #444;
 h1,
 h2,
 h3 {
-letter-spacing: -0.01em;
-line-height: 1.2;
-font-weight: 600;
-margin-bottom: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 0;
+
 }
 
 .page-title {
-font-size: 2.5rem;
-font-weight: 700;
-margin-top: 0;
-/*margin-bottom: 0.75em;*/
-text-align: center;
-}
-
-h1 {
-font-size: 1.875rem;
-margin-top: 1.875rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    /* margin-bottom: 0.75em; */
+    text-align: center;
 }
 
 h2 {
