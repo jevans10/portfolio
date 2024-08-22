@@ -19,9 +19,14 @@ padding: 0;
 }
 @media only screen {
 body {
-max-width: 900px;
-color: rgb(55, 53, 47);
+        /* max-width: 900px; */
+        color: rgb(55, 53, 47);
+    
+    }
 }
+
+.page-body{
+    padding: 0rem 30rem;
 }
 
 body {
@@ -114,7 +119,8 @@ border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
 
 img {
-max-width: 100%;
+    max-width: 100%;
+
 }
 
 @media only print {
@@ -395,11 +401,12 @@ margin-bottom: 0.5em;
 }
 
 .image {
-border: none;
-margin: 1.5em 0;
-padding: 0;
-border-radius: 0;
-text-align: center;
+    border: none;
+    /* margin: 1.5em 0; */
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+
 }
 
 .code,
@@ -491,7 +498,10 @@ font-size: 0.75em;
 margin-top: 0.25em;
 }
 
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.sans {
+    /* font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; */
+
+}
 .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
 .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
 .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
