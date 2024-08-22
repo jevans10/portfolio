@@ -1,0 +1,25 @@
+/* navbar.css */
+
+/* General styles for the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px;
+    background-color: #333; /* Background color for navbar */
+}
+
+nav img {
+    margin-right: auto; /* Pushes the image to the left */
+}
+
+nav a {
+    color: white; /* Text color for links */
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #555; /* Hover background color */
+}
