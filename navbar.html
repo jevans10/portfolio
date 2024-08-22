@@ -1,211 +1,32 @@
-/* navbar.css */
-
-ul {
-    list-style: none;
-}
-
-/* Navbar wrapper */
-.navbar-wrapper {
-    justify-content: space-between;
-    align-items: center;
-    line-height: 10px;
-    display: flex;
-}
-
-/* Navbar menu styles */
-.nav-menu-two {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    display: flex;
-}
-
-/* Navbar links */
-.nav-link {
-    color: #1a1b1f;
-    letter-spacing: .25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    font-family: Bitter, serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: #1a1b1fbf;
-}
-
-.nav-link:focus-visible {
-    outline-offset: 0;
-    color: #0050bd;
-    border-radius: 4px;
-    outline: 2px solid #0050bd;
-}
-
-/* Mobile menu button */
-.menu-button {
-    padding: 18px;
-    font-size: 24px;
-    display: none; /* Hidden by default */
-}
-
-/* Navbar collapse behavior */
-.w-nav[data-collapse=all] .w-nav-menu {
-    display: none;
-}
-
-.w-nav[data-collapse=all] .w-nav-button {
-    display: block;
-}
-
-@media screen and (max-width: 991px) {
-    .w-nav[data-collapse=medium] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=medium] .w-nav-button {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .w-nav[data-collapse=small] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=small] .w-nav-button {
-        display: block;
-    }
-
-    .navbar-logo-left-container {
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .w-nav[data-collapse=tiny] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=tiny] .w-nav-button {
-        display: block;
-    }
-}
-
-.w-icon-nav-menu:before {
-    content: ""; /* Adjust if you have different icons */
-}
-
-
-/* navbar.css */
-
-/* Container for the navbar and logo */
-.navbar-logo-left-container {
-    z-index: 5;
-    background-color: #fff;
-    width: 100%;
-    /* max-width: 1140px; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-
-}
-
-/* Navbar wrapper */
-.navbar-wrapper {
-    justify-content: space-between;
-    align-items: center;
-    line-height: 10px;
-    display: flex;
-}
-
-/* Navbar menu styles */
-.nav-menu-two {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    display: flex;
-}
-
-/* Navbar links */
-.nav-link {
-    color: #1a1b1f;
-    letter-spacing: .25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    font-family: Bitter, serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: #1a1b1fbf;
-}
-
-.nav-link:focus-visible {
-    outline-offset: 0;
-    color: #0050bd;
-    border-radius: 4px;
-    outline: 2px solid #0050bd;
-}
-
-/* Mobile menu button */
-.menu-button {
-    padding: 18px;
-    font-size: 24px;
-    display: none; /* Hidden by default */
-}
-
-/* Navbar collapse behavior */
-.w-nav[data-collapse=all] .w-nav-menu {
-    display: none;
-}
-
-.w-nav[data-collapse=all] .w-nav-button {
-    display: block;
-}
-
-@media screen and (max-width: 991px) {
-    .w-nav[data-collapse=medium] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=medium] .w-nav-button {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .w-nav[data-collapse=small] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=small] .w-nav-button {
-        display: block;
-    }
-
-    .navbar-logo-left-container {
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .w-nav[data-collapse=tiny] .w-nav-menu {
-        display: none;
-    }
-
-    .w-nav[data-collapse=tiny] .w-nav-button {
-        display: block;
-    }
-}
-
-.w-icon-nav-menu:before {
-    content: ""; /* Adjust if you have different icons */
-}
+<!DOCTYPE html>
+<html data-wf-page="66c4a1fd31a4eeaaab9f7d51" data-wf-site="66c4a1fd31a4eeaaab9f7d45" data-wf-status="1">
+<head>
+    <meta charset="utf-8" />
+    <title>Josephine's Supercool Site</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/app-icon.png" rel="apple-touch-icon" />
+</head>
+<body>
+    <div class="navbar-logo-left-container shadow-three w-nav">
+        <div class="container">
+            <div class="navbar-wrapper">
+                <a href="index.html" class="navbar-brand w-nav-brand">
+                    <img loading="lazy" height="50" alt src="images/black-favicon.svg" class="image" />
+                </a>
+                <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+                    <ul role="list" class="nav-menu-two w-list-unstyled">
+                        <li><a href="https://josephineevans.org/JOSEPHINE_EVANS'_RESUME.pdf" class="nav-link">Download my resume</a></li>
+                        <li class="mobile-margin-top-10"><a href="https://jevans10.github.io/portfolio/all-projects.html" class="nav-link">View my portfolio</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-button w-nav-button">
+                    <div class="w-icon-nav-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
