@@ -4,17 +4,6 @@ ul {
     list-style: none;
 }
 
-/* Container for the navbar and logo */
-.navbar-logo-left-container {
-    z-index: 5;
-    background-color: #fff; /* Ensuring navbar has a white background */
-    width: 100%; /* Make sure it spans the full width */
-    max-width: 1140px; /* Adjust max-width as needed */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 20px;
-}
-
 /* Navbar wrapper */
 .navbar-wrapper {
     justify-content: space-between;
@@ -117,12 +106,12 @@ ul {
 /* Container for the navbar and logo */
 .navbar-logo-left-container {
     z-index: 5;
-    background-color: #fff; /* Ensuring navbar has a white background */
-    width: 100%; /* Make sure it spans the full width */
-    max-width: 1140px; /* Adjust max-width as needed */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 20px;
+    background-color: #fff;
+    width: 100%;
+    /* max-width: 1140px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+
 }
 
 /* Navbar wrapper */
