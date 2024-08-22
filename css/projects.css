@@ -1,5 +1,36 @@
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 20px;
+    padding: 20px;
+}
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.project-title {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.project-type {
+    color: #888;
+    margin-bottom: 10px;
+}
+.project-description {
+    font-size: 0.9em;
+    color: #333;
+}
+
 html {
 -webkit-print-color-adjust: exact;
 }
@@ -22,7 +53,6 @@ padding: 0;
 }
 @media only screen {
 body {
-        /* max-width: 900px; */
         color: rgb(55, 53, 47);
     
     }
