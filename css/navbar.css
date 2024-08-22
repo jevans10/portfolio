@@ -1,76 +1,66 @@
 /* navbar.css */
 
-.w-nav {
-    z-index: 1000;
-    background: #ddd;
-    position: relative;
-}
-
-.w-nav-brand {
-    float: left;
-    color: #333;
-    text-decoration: none;
-    position: relative;
-}
-
-.w-nav-link {
-    vertical-align: top;
-    color: #222;
-    text-align: left;
+/* Container for the navbar and logo */
+.navbar-logo-left-container {
+    z-index: 5;
+    background-color: #fff; /* Ensuring navbar has a white background */
+    width: 100%; /* Make sure it spans the full width */
+    max-width: 1140px; /* Adjust max-width as needed */
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 15px 20px;
+}
+
+/* Navbar wrapper */
+.navbar-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    line-height: 10px;
+    display: flex;
+}
+
+/* Navbar menu styles */
+.nav-menu-two {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    display: flex;
+}
+
+/* Navbar links */
+.nav-link {
+    color: #1a1b1f;
+    letter-spacing: .25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-family: Bitter, serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
     text-decoration: none;
-    display: inline-block;
-    position: relative;
 }
 
-.w-nav-menu {
-    float: right;
-    position: relative;
+.nav-link:hover {
+    color: #1a1b1fbf;
 }
 
-[data-nav-menu-open] {
-    text-align: center;
-    background: #c8c8c8;
-    min-width: 200px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    overflow: visible;
-    display: block !important;
+.nav-link:focus-visible {
+    outline-offset: 0;
+    color: #0050bd;
+    border-radius: 4px;
+    outline: 2px solid #0050bd;
 }
 
-.w-nav[data-animation=over-left] [data-nav-menu-open] {
-    z-index: 1;
-    top: 0;
-    right: auto;
-}
-
-.w-nav[data-animation=over-right] [data-nav-menu-open] {
-    z-index: 1;
-    top: 0;
-    left: auto;
-}
-
-.w-nav-button {
-    float: right;
-    cursor: pointer;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    -webkit-user-select: none;
-    user-select: none;
+/* Mobile menu button */
+.menu-button {
     padding: 18px;
     font-size: 24px;
-    display: none;
-    position: relative;
+    display: none; /* Hidden by default */
 }
 
-.w-nav-button:focus {
-    outline: 0;
-}
-
+/* Navbar collapse behavior */
 .w-nav[data-collapse=all] .w-nav-menu {
     display: none;
 }
@@ -79,7 +69,7 @@
     display: block;
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
     .w-nav[data-collapse=medium] .w-nav-menu {
         display: none;
     }
@@ -89,7 +79,7 @@
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     .w-nav[data-collapse=small] .w-nav-menu {
         display: none;
     }
@@ -98,12 +88,12 @@
         display: block;
     }
 
-    .w-nav-brand {
+    .navbar-logo-left-container {
         padding-left: 10px;
     }
 }
 
-@media screen and (max-width:479px) {
+@media screen and (max-width: 479px) {
     .w-nav[data-collapse=tiny] .w-nav-menu {
         display: none;
     }
@@ -111,4 +101,8 @@
     .w-nav[data-collapse=tiny] .w-nav-button {
         display: block;
     }
+}
+
+.w-icon-nav-menu:before {
+    content: ""; /* Adjust if you have different icons */
 }
