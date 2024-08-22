@@ -324,23 +324,42 @@ button {
     clear: both
 }
 
-@media screen and (max-width:991px) {
-    .w-container {
-        max-width: 728px
+@media screen and (max-width: 991px) {
+    .hero-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-split {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .shadow-two {
+        margin-right: 0;
     }
 }
 
-@media screen and (max-width:479px) {
-    .w-container {
-        max-width: none
+@media screen and (max-width: 767px) {
+    .hero-heading-center {
+        padding: 40px 15px;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-split {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .shadow-two {
+        width: 100%;
+        margin: 0;
     }
 }
 
-@media screen and (max-width:767px) {
-    .w-nav-brand {
-        padding-left: 10px
-    }
-}
 
 .w-nav {
     z-index: 1000;
