@@ -21,6 +21,17 @@
 	            ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch");
 	        }(window, document);
 	    </script>
+	
+	    <script src="js/jquery.js" type="text/javascript"></script>
+   		 <script src="js/webflow-script.js" type="text/javascript"></script>
+   		 <script>
+    		    // JavaScript to load navbar
+     		   fetch('navbar.html')
+      		      .then(response => response.text())
+       		     .then(data => {
+        	        document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
 	</head>
 	<body>
 	    <div id="navbar-container"></div> <!-- Placeholder for navbar -->
