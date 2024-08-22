@@ -88,8 +88,8 @@ th {
 }
 
 table {
-    border-left: none;
-    border-right: none
+    border: 1px solid rgba(55, 53, 47, .09);
+    border-collapse: collapse
 }
 
 td,
@@ -99,6 +99,7 @@ th {
     line-height: 1.5;
     min-height: 1.5em;
     text-align: left
+    border-bottom: 1px solid rgba(55, 53, 47, .09); /* Border for rows */
 }
 
 th {
