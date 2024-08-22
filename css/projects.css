@@ -21,8 +21,8 @@ color: rgb(55, 53, 47);
 }
 
 body {
-line-height: 1.5;
-white-space: pre-wrap;
+  line-height: 1.5;
+  background-color: #faf5f9;
 }
 
 a,
@@ -49,7 +49,7 @@ margin-bottom: 0;
 font-size: 2.5rem;
 font-weight: 700;
 margin-top: 0;
-margin-bottom: 0.75em;
+/*margin-bottom: 0.75em;*/
 }
 
 h1 {
@@ -207,7 +207,7 @@ margin-block-start: 0.6em;
 }
 
 ul > li {
-list-style: disc;
+list-style: none;
 }
 
 ul.to-do-list {
