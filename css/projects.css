@@ -11,6 +11,9 @@ box-sizing: border-box;
 article {
     text-align: center;
 }
+.container{
+    margin: 0px 470px;
+}
 
 html,
 body {
