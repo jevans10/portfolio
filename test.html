@@ -1,72 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive PDF Viewer</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .image-container {
-            position: relative;
-            max-width: 100%;
-            cursor: pointer;
-        }
-
-        .pdf-viewer {
-            display: none;
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            overflow: hidden;
-        }
-
-        .pdf-viewer iframe {
-            width: 100%;
-            height: calc(100% - 40px); /* Adjust height as needed */
-            border: none;
-        }
-
-        .pdf-viewer .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #333;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
-</head>
 <body>
-    <div class="image-container" onclick="togglePDFViewer()">
-        <img src="https://via.placeholder.com/300x200" alt="Clickable Image" style="width: 100%; max-width: 300px;">
+    <header>
+        /* navbar */
+    </header>
+    <div class="left-section">
+        <h1 class="page-title"></h1>
+        <table class="page-desription">
+            <tbody>
+                <tr class="property-row property-row-select">
+                    <th>
+                        <span class="icon property-icon">
+                            <svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect">
+                                <path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path>
+                            </svg>
+                        </span>
+                        Type
+                    </th>
+                    <td>
+                        <span class="selected-value select-value-color-red">Digital Concept</span>
+                    </td>
+                </tr>
+                <tr class="property-row property-row-text">
+                    <th>
+                        <span class="icon property-icon">
+                            <svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesText">
+                                <path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path>
+                            </svg>
+                        </span>
+                        Description
+                    </th>
+                    <td>The pod racer is a faster than the speed of light, comfortable one seater. The pod is thermal plated, yet light so it can be used both within the atmosphere and in space.  </td>
+                </tr>
+            </tbody>
+        </table>            
     </div>
-
-    <div class="pdf-viewer" id="pdfViewer">
-        <button class="close-btn" onclick="togglePDFViewer()">Close</button>
-        <iframe src="path/to/your/pdf.pdf" title="PDF Viewer"></iframe>
+    <div class="right-section">
+        <img src="images/projects/Pod Racer hero.png" alt="">
     </div>
-
-    <script>
-        function togglePDFViewer() {
-            const pdfViewer = document.getElementById('pdfViewer');
-            if (pdfViewer.style.display === 'none' || pdfViewer.style.display === '') {
-                pdfViewer.style.display = 'block';
-            } else {
-                pdfViewer.style.display = 'none';
-            }
-        }
-    </script>
 </body>
-</html>
