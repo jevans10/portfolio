@@ -14,9 +14,10 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .project-card img {
-    width: 100%;
+    width: 10em;
     height: auto;
     display: block;
+
 }
 .project-title {
     font-weight: bold;
@@ -82,7 +83,7 @@ h1,
 h2,
 h3 {
     letter-spacing: -0.01em;
-    line-height: 3;
+    line-height: 1.5rem;
     font-weight: 600;
     margin-bottom: 0;
 
@@ -91,9 +92,8 @@ h3 {
 .page-title {
     font-size: 2rem;
     font-weight: 700;
-    margin-top: 0;
-    /* margin-bottom: 0.75em; */
     text-align: center;
+
 }
 
 h2 {
@@ -431,7 +431,6 @@ margin-bottom: 0.5em;
 
 .image {
     border: none;
-    /* margin: 1.5em 0; */
     padding: 0;
     border-radius: 0;
     text-align: center;
@@ -526,7 +525,6 @@ word-break: break-word;
 font-size: 0.75em;
 margin-top: 0.25em;
 }
-
 .highlight-default {
 color: rgba(55, 53, 47, 1);
 }
