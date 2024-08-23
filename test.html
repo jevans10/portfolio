@@ -13,24 +13,30 @@
             display: grid;
         }
         .page-title{
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2
+            grid-area: title;
         }
         .table{
-            grid-column-start: 1;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 4
+            grid-area: table;
         }
+        .image{
+            grid-area: image:
+        }
+        .body{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "title . image image image" 
+                "table table image image image" 
+                ".. image image image"
+        }    
+        
     </style>
 </head>
 <body>
     <header>
-        /* navbar */
     </header>
-    <div class="left-section">
+    <div class="body">
         <h1 class="page-title"></h1>
         <table class="table">
             <tbody>
@@ -59,10 +65,10 @@
                     <td>The pod racer is a faster than the speed of light, comfortable one seater. The pod is thermal plated, yet light so it can be used both within the atmosphere and in space.  </td>
                 </tr>
             </tbody>
-        </table>            
-    </div>
-    <div class="right-section">
-        <img src="images/projects/Pod Racer hero.png" alt="">
+        </table>   
+        <div class="image">
+            <img src="images/projects/Pod Racer hero.png" alt="">
+        </div>
     </div>
 </body>
 </html>
