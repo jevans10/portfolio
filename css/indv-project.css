@@ -1,3 +1,15 @@
+/* Styles for header to ensure it is independent of the grid layout */
+header {
+    background-color: #f8f8f8; /* Background color for the header */
+    padding: 1em 0; /* Adjust padding as needed */
+    position: relative; /* Ensure correct positioning */
+}
+
+#navbar-container {
+    /* Style the navbar as needed */
+}
+
+/* Additional styling for body grid layout */
 .body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
@@ -5,26 +17,31 @@
     grid-template-areas:
         "title table table . ."
         "image image image image image"; /* Image spans across all three columns */
-    gap: 1em; /* Optional: space between grid items */
+    gap: 1em; /* Space between grid items */
     padding: 5em;
     background-color: #faf5f9;
 }
+
 .page-title {
     grid-area: title;
     margin: 0;
 }
+
 .table {
     grid-area: table;
-    margin-top: 0px; /* Space between image and table */     
-}   
+    margin-top: 0px; /* Space between image and table */
+}
+
 .image {
     grid-area: image;
-    Width: 50em; /* Ensure image scales properly */
+    width: 50em; /* Ensure image container scales properly */
 }
 
 .image img {
-    width: auto; /* Ensure image fills its container */
-    height: 30em; /* Maintain aspect ratio */
+    width: 100%; /* Ensure image fills its container */
+    height: auto; /* Maintain aspect ratio */
 }
-.th{
+
+.th {
     vertical-align: top;
+}
