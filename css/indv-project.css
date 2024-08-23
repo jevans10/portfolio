@@ -12,14 +12,15 @@ header {
 /* Additional styling for body grid layout */
 .body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-    grid-template-rows: auto auto; /* Two rows with automatic height */
-    grid-template-areas:
-        "title table table . ."
-        "image image image image image"; /* Image spans across all three columns */
-    gap: 1em; /* Space between grid items */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title table table . ."
+"image image image image image";
+    gap: 1em;
     padding: 5em;
+    padding-top: 1em;
     background-color: #faf5f9;
+
 }
 
 .page-title {
@@ -38,8 +39,9 @@ header {
 }
 
 .image img {
-    width: 100%; /* Ensure image fills its container */
-    height: auto; /* Maintain aspect ratio */
+    width: auto;
+    height: 30em;
+
 }
 
 .th {
