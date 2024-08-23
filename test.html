@@ -8,19 +8,17 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     
     <style>        
-        .body {
-            .parent {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr) 0;
-                grid-template-rows: .4fr repeat(3, 1fr) 0;
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-            }
-            .title { grid-area: 2 / 2 / 5 / 5; }
-            .table { grid-area: 1 / 1 / 2 / 2; }
-            .image { grid-area: 1 / 2 / 2 / 4; }
-        }
-        
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-template-rows: auto auto; /* Two rows with automatic height */
+    grid-template-areas:
+        "title table table"
+        "image image image"; /* Image spans across all three columns */
+    gap: 1em; /* Optional: space between grid items */
+    padding: 1em;
+}
         .page-title {
             grid-area: title;
             margin: 0;
@@ -77,5 +75,6 @@
             </tbody>
         </table>
     </div>
-</body>
-</html>
+
+
+</body></html>
