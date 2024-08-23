@@ -14,8 +14,8 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .project-card img {
-    width: 10em;
-    height: auto;
+    width: auto;
+    height: 10em;
     display: block;
 
 }
