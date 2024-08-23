@@ -25,7 +25,6 @@ header {
 .page-title {
     grid-area: title;
     margin: 0;
-    
 }
 
 .table {
