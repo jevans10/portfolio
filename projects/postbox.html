@@ -6,6 +6,27 @@
 
     /* cspell:disable-file */
     /* webkit printing magic: print all background colors */
+
+    .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .page-header-icon {
+        margin: 0; /* Remove margin to align with text */
+    }
+    
+    .page-title-container {
+        flex: 1; /* Allow the text container to take up available space */
+        margin-right: 1rem; /* Add some space between text and image */
+    }
+    
+    .page-description {
+        margin-bottom: 1em; /* Adjust if needed */
+    }
+    
+        
     html {
         -webkit-print-color-adjust: exact;
     }
@@ -822,24 +843,28 @@
 <body>
     <article id="40734efb-66bf-4c4e-9149-b53eba047508" class="page sans">
         <header>
-            <div class="page-header-icon undefined">
-                <img class="icon" src="https://www.notion.so/icons/connecting-flight_gray.svg"/>
+            <div class="header-container">
+                <div class="page-title-container">
+                    <h1 class="page-title">
+                        <strong>Fighter helmet</strong>
+                    </h1>
+                    <p class="page-description"></p>
+                </div>
+                <div class="page-header-icon">
+                    <img class="icon" src="https://www.notion.so/icons/connecting-flight_gray.svg" alt="Icon"/>
+                </div>
             </div>
-            <h1 class="page-title">
-                <strong>Fighter helmet</strong>
-            </h1>
-            <p class="page-description"></p>
             <table class="properties">
                 <tbody>
                     <tr class="property-row property-row-select">
                         <th>
                             <span class="icon property-icon">
                                 <svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect">
-                                    <path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path>
+                                    <path d="M8 15.126C11.8623 15.126 15.0616 11.926 15.0616 8.06397C15.0616 4.20194 11.8623 1.00065 8 1.00065C4.13768 1.00065 0.93842 4.20194 0.93842 8.06397C0.93842 11.926 4.13768 15.126 8 15.126Z"/>
                                 </svg>
                             </span>
-                            Type
                         </th>
+ 
                         <td>
                             <span class="selected-value select-value-color-red">Digital Concept</span>
                         </td>
