@@ -11,26 +11,38 @@
     <style>
         .body {
             display: grid;
-            grid-template-columns: 1fr auto; /* Title/description takes up remaining space, image is auto-sized */
-            gap: 10px; /* Optional: space between title/description and image */
+            grid-template-columns: 1fr auto; /* Title/description and image */
+            grid-template-rows: auto auto; /* Rows for title/description and table */
+            grid-template-areas:
+                "title image"
+                "description image"
+                "table table"; /* Table spans across both columns */
+            gap: 10px; /* Optional: space between items */
+            padding: 20px; /* Optional: add padding around the grid */
         }
         
         .page-title {
-            margin: 0; /* Remove default margin */
+            grid-area: title;
+            margin: 0;
         }
         
         .page-description {
-            margin: 0; /* Remove default margin */
-            margin-top: 0.5em; /* Space between title and description */
+            grid-area: description;
+            margin: 0;
         }
         
         .table {
-            grid-column: 1 / span 2; /* Ensure table spans the full width of the grid */
+            grid-area: table;
             margin-top: 20px; /* Space between image and table */
         }
         
+        .image {
+            grid-area: image;
+            max-width: 100%; /* Ensure image scales properly */
+        }
+        
         .image img {
-            max-width: 100%; /* Ensure image scales with its container */
+            width: 100%; /* Ensure image fills its container */
             height: auto; /* Maintain aspect ratio */
         }
     </style>
@@ -39,13 +51,11 @@
     <header>
     </header>
     <div class="body">
-        <div>
-            <h1 class="page-title">Pod Racer</h1>
-            <p class="page-description">The pod racer is a faster than the speed of light, comfortable one seater. The pod is thermal plated, yet light so it can be used both within the atmosphere and in space.</p>
-        </div>
+        <h1 class="page-title">Pod Racer</h1>
         <div class="image">
             <img src="images/projects/Pod Racer hero.png" alt="Pod Racer">
         </div>
+        <p class="page-description">The pod racer is a faster than the speed of light, comfortable one seater. The pod is thermal plated, yet light so it can be used both within the atmosphere and in space.</p>
         <table class="table">
             <tbody>
                 <tr class="property-row property-row-select">
@@ -73,7 +83,7 @@
                     <td>The pod racer is a faster than the speed of light, comfortable one seater. The pod is thermal plated, yet light so it can be used both within the atmosphere and in space.  </td>
                 </tr>
             </tbody>
-        </table>   
+        </table>
     </div>
 </body>
 </html>
