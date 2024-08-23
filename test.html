@@ -14,11 +14,10 @@
             grid-template-columns: 1fr auto; /* Title/description and image */
             grid-template-rows: auto auto; /* Rows for title/description and table */
             grid-template-areas:
-                "title image"
-                "description image"
-                "table table"; /* Table spans across both columns */
+                "title image image";
+                "table image image";
             gap: 10px; /* Optional: space between items */
-            padding: 20px; /* Optional: add padding around the grid */
+            padding: auto; /* Optional: add padding around the grid */
         }
         
         .page-title {
