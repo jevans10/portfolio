@@ -1,7 +1,8 @@
 /* Styles for header to ensure it is independent of the grid layout */
 header {
     background-color: #f8f8f8; /* Background color for the header */
-    padding: 1em 0; /* Adjust padding as needed */
+    padding: 1em; /* Adjust padding as needed */
+    padding-top: 0;
     position: relative; /* Ensure correct positioning */
 }
 
