@@ -23,8 +23,8 @@
 }
 
 .image img {
-    width: 100%; /* Ensure image fills its container */
-    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Ensure image fills its container */
+    height: 30em; /* Maintain aspect ratio */
 }
 .th{
     vertical-align: top;
