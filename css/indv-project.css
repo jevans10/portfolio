@@ -34,7 +34,7 @@ header {
     margin-top: 0px; /* Space between image and table */
 }
 
-.image {
+.hero {
     grid-area: image;
     width: 50em; /* Ensure image container scales properly */
 }
