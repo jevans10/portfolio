@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -9,31 +9,43 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
     
     <style>
-        .page-title{
-            grid-area: title;
-        }
-        .table{
-            grid-area: table;
-        }
-        .image{
-            grid-area: image:
-        }
-        .body{
+        .body {
             display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto;
-            grid-template-areas: 
-                "title . . image image image" 
-                "table table image image image"
-        }    
+            grid-template-columns: 1fr auto; /* Title/description takes up remaining space, image is auto-sized */
+            gap: 10px; /* Optional: space between title/description and image */
+        }
         
+        .page-title {
+            margin: 0; /* Remove default margin */
+        }
+        
+        .page-description {
+            margin: 0; /* Remove default margin */
+            margin-top: 0.5em; /* Space between title and description */
+        }
+        
+        .table {
+            grid-column: 1 / span 2; /* Ensure table spans the full width of the grid */
+            margin-top: 20px; /* Space between image and table */
+        }
+        
+        .image img {
+            max-width: 100%; /* Ensure image scales with its container */
+            height: auto; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
     <header>
     </header>
     <div class="body">
-        <h1 class="page-title"></h1>
+        <div>
+            <h1 class="page-title">Pod Racer</h1>
+            <p class="page-description">The pod racer is a faster than the speed of light, comfortable one seater. The pod is thermal plated, yet light so it can be used both within the atmosphere and in space.</p>
+        </div>
+        <div class="image">
+            <img src="images/projects/Pod Racer hero.png" alt="Pod Racer">
+        </div>
         <table class="table">
             <tbody>
                 <tr class="property-row property-row-select">
@@ -62,9 +74,6 @@
                 </tr>
             </tbody>
         </table>   
-        <div class="image">
-            <img src="images/projects/Pod Racer hero.png" alt="">
-        </div>
     </div>
 </body>
 </html>
