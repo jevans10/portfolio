@@ -20,6 +20,7 @@ header {
     gap: 1em;
     padding: 5em;
     padding-top: 1em;
+    padding-left: 285px !important;
     background-color: #faf5f9;
 
 }
