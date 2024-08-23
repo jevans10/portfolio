@@ -37,12 +37,7 @@ header {
 
 .hero {
     grid-area: image;
-    width: 50em; /* Ensure image container scales properly */
-}
-
-.image img {
-    width: auto;
-    height: 30em;
+    width: 20em;
 
 }
 
