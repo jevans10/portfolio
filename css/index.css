@@ -9,7 +9,6 @@ body {
 }
 
 menu,
-nav,
 section {
     display: block
 }
@@ -478,25 +477,6 @@ button {
 }
 
 @media screen and (max-width:767px) {
-    .navbar-logo-left-container {
-        max-width: 100%
-    }
-
-    .navbar-brand {
-        padding-left: 0
-    }
-
-    .nav-menu-two {
-        border-radius: 20px;
-        flex-direction: column;
-        padding-bottom: 30px
-    }
-
-    .nav-link {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: inline-block
-    }
 
     .mobile-margin-top-10 {
         margin-top: 10px
