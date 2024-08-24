@@ -1,5 +1,136 @@
 /* responsive.css */
 
+@media only screen {
+body {
+        color: rgb(55, 53, 47);
+    
+    }
+}
+@media screen and (max-width:991px) {
+
+.nav-menu-wrapper {
+    background-color: #0000
+}
+@media screen and (max-width:991px) {
+.w-nav[data-collapse=medium] .w-nav-menu {
+    display: none
+}
+
+.w-nav[data-collapse=medium] .w-nav-button {
+    display: block
+}
+}
+@media screen and (max-width: 767px) {
+.w-nav[data-collapse=small] .w-nav-menu {
+    display: none;
+}
+
+.w-nav[data-collapse=small] .w-nav-button {
+    display: block;
+}
+
+.navbar-logo-left-container {
+    padding-left: 10px;
+}
+}@media screen and (max-width: 991px) {
+.w-nav[data-collapse=medium] .w-nav-menu {
+    display: none;
+}
+
+.w-nav[data-collapse=medium] .w-nav-button {
+    display: block;
+}
+}
+@media only print {
+img {
+max-height: 100vh;
+object-fit: contain;
+}
+}
+@media screen and (max-width:767px) {
+.navbar-logo-left-container {
+    max-width: 100%
+}
+
+.navbar-brand {
+    padding-left: 0
+}
+
+.nav-menu-two {
+    border-radius: 20px;
+    flex-direction: column;
+    padding-bottom: 30px
+}
+
+.nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block
+} }
+@media screen and (max-width: 767px) {
+.w-nav[data-collapse=small] .w-nav-menu {
+    display: none;
+}
+
+.w-nav[data-collapse=small] .w-nav-button {
+    display: block;
+}
+
+.navbar-logo-left-container {
+    padding-left: 10px;
+}
+}
+@media screen and (max-width: 479px) {
+.w-nav[data-collapse=tiny] .w-nav-menu {
+    display: none;
+}
+
+.w-nav[data-collapse=tiny] .w-nav-button {
+    display: block;
+}
+}
+@media screen and (max-width: 991px) {
+.w-nav[data-collapse=medium] .w-nav-menu {
+    display: none;
+}
+
+.w-nav[data-collapse=medium] .w-nav-button {
+    display: block;
+}
+}   
+@media screen and (max-width: 479px) {
+.w-nav[data-collapse=tiny] .w-nav-menu {
+    display: none;
+}
+
+.w-nav[data-collapse=tiny] .w-nav-button {
+    display: block;
+}
+}
+
+@media screen and (max-width:767px) {
+.w-nav-brand {
+    padding-left: 10px
+}
+}
+@media screen and (max-width:767px) {
+.w-nav[data-collapse=small] .w-nav-menu {
+    display: none
+}
+
+.w-nav[data-collapse=small] .w-nav-button {
+    display: block
+}
+
+.w-nav-brand {
+    padding-left: 10px
+}
+}
+@media screen and (max-width:479px) {
+.w-nav[data-collapse=tiny] .w-nav-menu {
+    display: none
+}
+    
 @media screen and (max-width:991px) {
     .container {
         max-width: 728px;
