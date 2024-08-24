@@ -6,10 +6,6 @@ header {
     position: relative; /* Ensure correct positioning */
 }
 
-#navbar-container {
-    /* Style the navbar as needed */
-}
-
 /* Additional styling for body grid layout */
 .body {
     display: grid;
