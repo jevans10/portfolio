@@ -76,6 +76,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     display: flex;
+    width: 1390px
 }
 
 .navbar-logo-left-container {
