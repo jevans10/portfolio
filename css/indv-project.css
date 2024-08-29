@@ -1,10 +1,11 @@
-/* Styles for header to ensure it is independent of the grid layout */
+/* Styles for header to ensure it is independent of the grid layout 
 header {
-    background-color: #f8f8f8; /* Background color for the header */
-    padding: 1em; /* Adjust padding as needed */
+    background-color: #f8f8f8; 
+    padding: 1em
     padding-top: 0;
-    position: relative; /* Ensure correct positioning */
+    position: relative; 
 }
+*/
 
 /* Additional styling for body grid layout */
 .body {
