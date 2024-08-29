@@ -2,7 +2,7 @@ body {
     margin: 0 color: white;
     background-color: #faf5f9;
     min-height: 100%;
-    line-height: 20px}
+    }
 a,
 a.visited {
     color: inherit;
