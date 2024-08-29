@@ -22,15 +22,16 @@
 .project-title {
     font-weight: normal;
     margin: 10px 0 5px;
-    font-size: .9em;
+    font-size: 32px;
 
 }
 .project-type {
     color: #888;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 .project-description {
-    font-size: 0.7em;
+    font-size: 20px;
     color: #333;
 
 }
