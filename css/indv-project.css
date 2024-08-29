@@ -3,8 +3,7 @@ header {
     background-color: #f8f8f8; 
     padding: 1em
     padding-top: 0;
-    position: relative; 
-}
+    position: relative;}
 */
 
 /* Additional styling for body grid layout */
@@ -13,7 +12,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "title table table . ."
-"image image image image image";
+        "image image image image image";
     gap: 1em;
     padding: 5em;
     padding-top: 1em;
@@ -36,50 +35,51 @@ header {
 
 .table {
     grid-area: table;
-    margin-top: 0px; /* Space between image and table */
+    margin-top: 0px;
+    /* Space between image and table */
 }
 
 .hero {
     grid-area: image;
     width: 20em;
-
 }
 
 .th {
-    vertical-align: top;
+    text-align: right;
 }
-  /* Popup styles */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
 
-        .popup-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            width: 80%;
-            height: 80%;
-            position: relative;
-        }
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-        #pdfViewer {
-            width: 100%;
-            height: 100%;
-        }
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
 
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 24px;
-            cursor: pointer;
-        }
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
