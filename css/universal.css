@@ -6,7 +6,7 @@ body {
 a,
 a.visited {
     color: inherit;
-    text-decoration: underline;}
+    text-decoration: none;}
 html[data-w-dynpage] [data-w-cloak] {
     color: #0000 !important}
 p {
@@ -27,7 +27,6 @@ img {
     border: 0 max-width: 100%;
     margin: auto;}
 html {
-    font-family: Bitter;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-family: sans-serif;
@@ -41,7 +40,9 @@ ul {
     list-style: none;
     margin-top: 0px;}
 html {
-    -webkit-print-color-adjust: exact;}
+    -webkit-print-color-adjust: exact;
+    font-family: Bitter;
+    }
 * {
     box-sizing: border-box;
     -webkit-print-color-adjust: exact;}
