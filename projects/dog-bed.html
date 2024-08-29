@@ -4,11 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>TITLE</title>
 
-    <!-- Link to the external CSS file -->
-    <link href="css/indv-project.css" rel="stylesheet" type="text/css">
-    <link href="css/navbar.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <!-- Link to the external CSS files -->
+    <link href="../css/universal.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/indv-project.css" rel="stylesheet" type="text/css">
+    <link href="../css/navbar.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -27,11 +27,12 @@
             ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch");
         }(window, document);
     </script>
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/webflow-script.js" type="text/javascript"></script>
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/popup.js" type="text/javascript"></script>
+    <script src="../js/webflow-script.js" type="text/javascript"></script>
     <script>
         // JavaScript to load navbar
-        fetch('navbar.html')
+        fetch('../navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
@@ -43,13 +44,14 @@
     <header>
         <div id="navbar-container"></div> <!-- Placeholder for navbar -->
     </header>
-    <div class="body">
-        <h1 class="page-title">Multi-pet Bed</h1>
+    <div class="body"style="padding-left: 270px !important; padding-right: 245px !important;">
+        <h1 class="page-title">Pod Racer</h1>
         <div class="hero">
-            <img src="images/projects/Pet bed hero.png" alt="Multi-pet Bed">
+            <!-- Image as the button -->
+            <img id="openPdfButton" src="../images/projects/Pod Racer hero.png" alt="Pod Racer" class="pdf-button">
         </div>
         
-        <table class="table">
+        <table class="table" style="font-size: 20px">
             <tbody>
                 <tr class="property-row property-row-select">
                     <th>
@@ -57,7 +59,7 @@
                         Type
                     </th>
                     <td style="margin-left:10px">
-                        <span class="selected-value select-value-color-red" style="padding-left: 10px !important;">Digital Concept</span>
+                        <span class="selected-value select-value-color-red" style="padding-left: 10px !important; font-style: normal;">Digital Concept</span>
                     </td>
                 </tr>
                 <tr class="property-row property-row-text" style="border-top-style: solid !important; border-top-width: 4px !important;">
@@ -65,13 +67,18 @@
                         <span class="icon property-icon"></span>
                         Description
                     </th>
-                    <td style="padding-left: 10px !important;">This innovative pet bed is designed for multi-pet households, 
-			    featuring two distinct layers to cater to your pets' varying comfort needs. The suspended mesh 
-			    bottom promotes airflow to keep your pet cool, while the soft, plush top layer offers warmth and 
-			    cozy comfort. It’s perfect for pets who appreciate a choice between a cool or warm resting spot.</td>
+                    <td style="padding-left: 10px !important;">The pod racer is a faster than the speed of light, comfortable one-seater. The pod is thermal plated, yet light so it can be used both within the atmosphere and in space.</td>
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <!-- PDF popup container -->
+    <div id="pdfPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        </div>
     </div>
 </body>
 </html>
