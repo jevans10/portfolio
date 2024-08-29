@@ -28,6 +28,10 @@ header {
 .page-title {
     grid-area: title;
     margin: 0;
+    font-size: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .table {
