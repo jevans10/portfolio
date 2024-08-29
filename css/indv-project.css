@@ -19,7 +19,10 @@ header {
     padding-top: 1em;
     padding-left: 285px !important;
     background-color: #faf5f9;
+}
 
+.pdf-button {
+    height: 1000px
 }
 
 .page-title {
